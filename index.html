@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilmiy Faoliyat Monitoring Tizimi</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ilmiy Faoliyat Monitoring Tizimi</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Bosh sahifa</a></li>
+                <li><a href="#teachers">Professor-o‘qituvchilar</a></li>
+                <li><a href="#research">Ilmiy Ishlar</a></li>
+                <li><a href="#contact">Aloqa</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Xush kelibsiz!</h2>
+        <p>Bu tizim professor-o‘qituvchilarning ilmiy faoliyatini monitoring qilish uchun mo‘ljallangan.</p>
+    </section>
+
+    <section id="teachers">
+        <h2>Professor-o‘qituvchilar ro‘yxati</h2>
+        <table id="teachers-list">
+            <thead>
+                <tr>
+                    <th>Ism</th>
+                    <th>Ilmiy yo‘nalish</th>
+                    <th>Ilmiy maqolalar soni</th>
+                    <th>Grantlar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Abdullayev Alisher</td>
+                    <td>Kompyuter fanlari</td>
+                    <td>12</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Aliyeva Gulnora</td>
+                    <td>Matematika</td>
+                    <td>8</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="research">
+        <h2>Ilmiy Ishlar</h2>
+        <form id="research-form">
+            <label for="teacher">Professor o‘qituvchi:</label>
+            <select id="teacher" name="teacher">
+                <option value="1">Abdullayev Alisher</option>
+                <option value="2">Aliyeva Gulnora</option>
+            </select>
+            <br>
+            <label for="research-title">Ilmiy ish nomi:</label>
+            <input type="text" id="research-title" name="research-title">
+            <br>
+            <label for="publication-date">Nashr etilgan sana:</label>
+            <input type="date" id="publication-date" name="publication-date">
+            <br>
+            <button type="submit">Qo‘shish</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Aloqa</h2>
+        <p>Biz bilan bog‘lanish uchun quyidagi formani to‘ldiring:</p>
+        <form id="contact-form">
+            <label for="name">Ismingiz:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Elektron pochta:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <button type="submit">Yuborish</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Ilmiy Faoliyat Monitoring Tizimi. Barcha huquqlar himoyalangan.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
